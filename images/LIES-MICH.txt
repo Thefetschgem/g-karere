@@ -1,0 +1,20 @@
+BILDER FÜR DIE WEBSITE
+
+Die Seite sucht die Fotos zuerst in diesem Ordner (images/). Fehlen sie, lädt sie vorübergehend die Originale vom alten Jimdo-Server.
+Wenn Jimdo abgeschaltet wird, verschwinden diese Fotos. Deshalb jetzt speichern:
+Rechtsklick auf das Foto auf der alten Seite → "Bild speichern unter…" und mit genau diesem Dateinamen hier ablegen.
+
+mark-3-hero.jpg    <- Mark III, erstes Bild
+mark-3-inside.jpg  <- Mark III, Bild „Ein Blick in das Innere“
+wettbewerb.jpg     <- Seite „Der Wettbewerb“, Bild neben dem Text
+team-1.jpg         <- Über uns, Teamfoto 1
+team-2.jpg         <- Über uns, Teamfoto 2
+team-3.jpg         <- Über uns, Teamfoto 3
+eckhard.jpg        <- Über uns, Hr. Eckhard
+mueller.jpg        <- Über uns, Hr. Müller
+mark-2-1.jpg       <- Seite ROV Mark II, erstes Bild
+mark-2-2.jpg       <- Seite ROV Mark II, zweites Bild
+mark-1-1.jpg       <- Seite ROV Mark I, erstes Bild
+mark-1-2.jpg       <- Seite ROV Mark I, zweites Bild
+
+Bei den Bildern ohne Fallback (mark-1-*, mark-2-*) bleibt der Platz leer und wird automatisch ausgeblendet, bis die Datei da ist.
