@@ -75,3 +75,27 @@ footer{padding:3rem 7vw;border-top:1px solid #ffffff22;display:flex;flex-wrap:wr
 .js .rv.in{opacity:1;transform:none}
 @media(max-width:800px){.two{grid-template-columns:1fr}.rov{opacity:.25;width:70vw!important}#gauge{right:.5rem}nav a:not(.lg){display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+.login{max-width:440px}
+.login label{display:block;margin-top:1.1rem}
+.login input{display:block;width:100%;margin-top:.35rem;padding:.8rem 1rem;font:inherit;background:#02101b;color:var(--foam);border:1px solid #ffffff55}
+.login input:focus{outline:2px solid var(--or);border-color:var(--or)}
+.login button{margin-top:1.4rem;border:0;cursor:pointer;font:inherit}
+.err{color:#ffb089;margin-top:1rem;min-height:1.5rem}
+.count{display:flex;gap:1.4rem;align-items:baseline;flex-wrap:wrap;margin-bottom:1.5rem}
+.count b{font-size:clamp(4rem,14vw,9rem);line-height:.9;color:var(--or);font-weight:900;letter-spacing:-.05em}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0 2rem}
+.chips button{font:inherit;font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;background:none;color:var(--foam);border:1px solid #ffffff55;padding:.35rem .9rem;cursor:pointer}
+.chips button.on{background:var(--or);border-color:var(--or);color:var(--ink)}
+.mon{color:var(--or);margin:2.2rem 0 .6rem}
+.it{display:grid;grid-template-columns:5.5rem 1fr;gap:.3rem 1.2rem;padding:.9rem 0;border-bottom:1px solid #ffffff22}
+.it .mono{color:#d9f1ee99}
+.it.done h3{text-decoration:line-through;opacity:.5}
+.it.late .mono:first-child{color:#ffb089}
+.it label{cursor:pointer;display:flex;gap:.7rem;align-items:flex-start}
+.it input{margin-top:.45rem;accent-color:var(--or)}
+.it h3{font-size:1.1rem;margin:0}
+.it p{color:#d9f1ee99;font-size:.95rem}
+.it .tag{margin:.3rem .4rem 0 0;font-size:.68rem}
+.it .tag.m{background:var(--foam)}
+.banner{border-left:3px solid var(--or);padding:.2rem 0 .2rem 1.2rem;margin:1rem 0 0;max-width:46rem}
+[hidden]{display:none!important}
