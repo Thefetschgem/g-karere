@@ -1,260 +1,33 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start – G-Karere Unterwasserrobotik</title>
-  <meta name="description" content="Schüler*innen der Walter-Lübcke-Schule Wolfhagen bauen einen Unterwasserroboter für die MATE ROV Competition in den USA.">
-  <link rel="stylesheet" href="style.css">
-</head>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Start – Seewolf Unterwasserrobotik</title><meta name="description" content="Schüler*innen der Walter-Lübcke-Schule Wolfhagen bauen einen Unterwasserroboter für die MATE ROV Competition in den USA."><link rel="stylesheet" href="style.css"></head>
 <body>
-
-  <!-- Navigation -->
-  <nav class="mono">
-    <a class="lg" href="index.html#top">G-KARERE</a>
-    <a href="index.html#about" data-en="About">Über uns</a>
-    <a href="index.html#rovs">ROVs</a>
-    <a href="seewolf.html">Seewolf</a>
-    <a href="seeboy.html">Seeboy</a>
-    <a href="index.html#comp" data-en="Competition">Wettbewerb</a>
-    <a href="index.html#sponsors">Sponsoring</a>
-    <a href="index.html#contact" data-en="Contact">Kontakt</a>
-    <button id="lang" aria-label="Language">EN</button>
-  </nav>
-
-  <div id="gauge" aria-hidden="true">
-    <b id="depth">0</b><span>M</span>
-  </div>
-
-  <!-- Hero Header -->
-  <header class="hero" id="top">
-    <i class="ring"></i>
-    <i class="ring"></i>
-    <i class="ring"></i>
-    <svg class="rov" viewBox="0 0 300 260" aria-label="ROV">
-      <rect x="70" y="60" width="160" height="140" rx="18" fill="none" stroke="#06202e" stroke-width="6"/>
-      <rect x="105" y="78" width="90" height="104" rx="45" fill="#ff6a1f"/>
-      <rect x="118" y="92" width="64" height="76" rx="32" fill="#d9f1ee" opacity=".85"/>
-      <circle cx="150" cy="130" r="14" fill="#06202e"/>
-      <circle cx="150" cy="130" r="5" fill="#ff6a1f"/>
-      <g fill="#06202e">
-        <circle cx="58" cy="52" r="34"/>
-        <circle cx="242" cy="52" r="34"/>
-        <circle cx="58" cy="208" r="34"/>
-        <circle cx="242" cy="208" r="34"/>
-      </g>
-      <g fill="none" stroke="#ff6a1f" stroke-width="4">
-        <circle cx="58" cy="52" r="20"/>
-        <circle cx="242" cy="52" r="20"/>
-        <circle cx="58" cy="208" r="20"/>
-        <circle cx="242" cy="208" r="20"/>
-      </g>
-      <path d="M150 60V20M140 30l10-12 10 12" stroke="#06202e" stroke-width="5" fill="none"/>
-    </svg>
-
-    <span class="mono">Walter-Lübcke-Schule · Wolfhagen · Hessen</span>
-    <h1>Sea<i>-</i><br>wolf</h1>
-    <p class="sub" data-en="We are a school team building our own underwater robot to compete at the MATE ROV Competition in the USA.">
-      Wir sind eine Schul-AG und bauen unseren eigenen Unterwasserroboter, um damit beim MATE ROV Competition in den USA anzutreten.
-    </p>
-    <svg class="wave" viewBox="0 0 1200 80" preserveAspectRatio="none">
-      <path d="M0 40Q150 0 300 40T600 40T900 40T1200 40V80H0Z" fill="#0a3d52"/>
-    </svg>
-  </header>
-
-  <main>
-    <!-- Über uns -->
-    <section id="about" class="rv">
-      <span class="st mono">Station 01 · 20 m</span>
-      <h2 data-en="Who we are">Wer wir sind</h2>
-      <div class="two">
-        <div>
-          <p data-en="We are the underwater robotics club G-Karere. Our goal: to independently design and build a working underwater robot (ROV) and take it to an international competition. We learn the technology and how to organise ourselves as a team.">
-            Wir sind die Unterwasserrobotik-AG G-Karere. Unser Ziel: selbstständig einen funktionstüchtigen Unterwasserroboter (ROV) entwickeln und bauen und damit an einem internationalen Wettbewerb teilnehmen. Dabei lernen wir die Technik – und wie wir uns als Team selbst organisieren.
-          </p>
-          <p data-en="Like the competition demands, we run like a small company, with departments and roles.">
-            Wie es der Wettbewerb verlangt, arbeiten wir wie ein kleines Unternehmen – mit Abteilungen und Ämtern.
-          </p>
-        </div>
-        <div class="stats">
-          <div><b>3</b><span data-en="ROV generations">ROV-Generationen</span></div>
-          <div><b>2018</b><span data-en="World finals, Seattle area">Weltfinale bei Seattle</span></div>
-          <div><b>1×</b><span data-en="the only German team (2018)">einziges deutsches Team (2018)</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Geschichte / Logbuch -->
-    <section class="rv">
-      <span class="st mono" data-en="Log">Logbuch</span>
-      <h2 data-en="Our history">Unsere Geschichte</h2>
-      <div class="tl">
-        <div>
-          <span class="mono">2016</span>
-          <p data-en="Project founded at our school by Mr. Prinz.">Das Projekt wird von Herrn Prinz an unserer Schule ins Leben gerufen.</p>
-        </div>
-        <div>
-          <span class="mono">06 / 2017</span>
-          <p data-en="ROV Mark I is finished, but a leaking tube makes us miss the deadline.">ROV Mark I wird fertig – wegen einer undichten Röhre verpassen wir aber die Deadline.</p>
-        </div>
-        <div>
-          <span class="mono">2018</span>
-          <p data-en="With Mark II we qualify as the only German team for the international finals near Seattle. A leak damages the electronics there.">Mit Mark II qualifizieren wir uns als einziges deutsches Team für das Finale bei Seattle. Dort beschädigt ein Wassereinbruch die Elektronik.</p>
-        </div>
-        <div>
-          <span class="mono">2019</span>
-          <p data-en="Work on Mark III begins.">Die Arbeit an Mark III beginnt.</p>
-        </div>
-        <div>
-          <span class="mono">2020</span>
-          <p data-en="The competition is cancelled because of the pandemic and our work slows down.">Der Wettbewerb wird wegen Corona abgesagt, unsere Arbeit verzögert sich enorm.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ROVs & Systeme -->
-    <section id="rovs" class="rv">
-      <span class="st mono">Station 02 · 60 m</span>
-      <h2 data-en="Our ROVs & Systems">Unsere ROVs & Systeme</h2>
-      <div class="cards">
-        <a class="card" href="rov-mark-1.html">
-          <span class="n">I</span>
-          <h3>Mark I</h3>
-          <p data-en="Our first robot (2017). It taught us the hardest lesson: watertight really means watertight.">Unser erster Roboter (2017). Er brachte uns die wichtigste Lektion bei: Dicht heißt wirklich dicht.</p>
-          <span class="go mono" data-en="View page →">Zur Seite →</span>
-        </a>
-        <a class="card" href="rov-mark-2.html">
-          <span class="n">II</span>
-          <h3>Mark II</h3>
-          <p data-en="Built from 2017. Took us to the 2018 finals in Tahoma, Washington.">Gebaut ab 2017. Brachte uns 2018 ins Finale nach Tahoma (Washington).</p>
-          <span class="go mono" data-en="View page →">Zur Seite →</span>
-        </a>
-        <a class="card hot" href="rov-mark-3.html">
-          <span class="n">III</span>
-          <span class="tag mono" data-en="In development">In Entwicklung</span>
-          <h3>Mark III</h3>
-          <p data-en="Our current ROV: more professional hardware and software.">Unser aktueller ROV: professionellere Hardware und Software.</p>
-          <span class="go mono" data-en="View page →">Zur Seite →</span>
-        </a>
-        <a class="card hot" href="seewolf.html">
-          <span class="n">🐺</span>
-          <span class="tag mono">Neu</span>
-          <h3>Seewolf</h3>
-          <p>Unsere neue Roboterreihe, angetrieben durch eine Kombination aus ESP32 und Arduino Mega.</p>
-          <span class="go mono">Zur Seite →</span>
-        </a>
-        <a class="card hot" href="seeboy.html">
-          <span class="n">⚓</span>
-          <span class="tag mono">Neu</span>
-          <h3>Seeboy</h3>
-          <p>Die dazugehörige Mess- und Kommunikationsboje basierend auf ESP32 und Arduino Mega.</p>
-          <span class="go mono">Zur Seite →</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Der Wettbewerb -->
-    <section id="comp" class="rv">
-      <span class="st mono">Station 03 · 100 m</span>
-      <h2 data-en="The competition">Der Wettbewerb</h2>
-      <div class="two">
-        <div>
-          <p data-en="The MATE ROV Competition is an international contest by MATE II. Student teams from all over the world build an ROV and solve missions based on real-world problems, such as removing plastic waste from the sea.">
-            Die MATE ROV Competition ist ein internationaler Wettbewerb der Organisation MATE II. Schüler-Teams aus aller Welt bauen einen ROV und lösen Aufgaben nach realen Problemen – etwa das Entfernen von Plastikmüll aus dem Meer.
-          </p>
-          <p data-en="We compete in the RANGER class. Since there is no regional round nearby, we qualify by sending in a video of our ROV solving tasks underwater. Teams also present in English to experts and hand in technical documents.">
-            Wir starten in der Klasse RANGER. Weil es keine Vorrunde in der Nähe gibt, qualifizieren wir uns per Video, in dem unser ROV Aufgaben unter Wasser löst. Dazu kommen eine Präsentation auf Englisch vor Fachleuten und schriftliche Dokumente.
-          </p>
-          <p style="margin-top:1.6rem">
-            <a class="btn" href="https://www.materovcompetition.org/" target="_blank" rel="noopener">materovcompetition.org →</a>
-          </p>
-        </div>
-        <figure class="pic">
-          <img src="images/wettbewerb.jpg" alt="MATE ROV Competition" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/dimension=1920x1024:format=jpg/path/s03b168795390becb/image/iddf4a0cc4f48d196/version/1633785123/image.jpg'">
-        </figure>
-      </div>
-    </section>
-
-    <!-- Die Crew -->
-    <section id="team" class="rv">
-      <span class="st mono">Station 04 · 130 m</span>
-      <h2 data-en="The crew">Die Crew</h2>
-      <p data-en="Our team changes every school year and is run like a small company. Mentors: Mr. Eckhard and Mr. Müller.">
-        Unser Team wechselt jedes Schuljahr und ist wie ein kleines Unternehmen aufgebaut. Mentoren: Hr. Eckhard und Hr. Müller.
-      </p>
-      <div class="who">
-        <figure class="pic">
-          <img src="images/eckhard.jpg" alt="Hr. Eckhard" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/dimension=200x10000:format=jpg/path/s03b168795390becb/image/icae2709d83f6600f/version/1583605324/image.jpg'">
-          <figcaption class="mono" data-en="Mr. Eckhard">Hr. Eckhard</figcaption>
-        </figure>
-        <figure class="pic">
-          <img src="images/mueller.jpg" alt="Hr. Müller" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/i426fca9f665eab81/version/1598301120/image.jpg'">
-          <figcaption class="mono" data-en="Mr. Müller">Hr. Müller</figcaption>
-        </figure>
-      </div>
-      <div class="pics">
-        <figure class="pic"><img src="images/team-1.jpg" alt="Teamfoto" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/i86588883fc95627b/version/1604165728/image.jpg'"></figure>
-        <figure class="pic"><img src="images/team-2.jpg" alt="Teamfoto" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/ib8a6d61e08a3417a/version/1604161608/image.jpg'"></figure>
-        <figure class="pic"><img src="images/team-3.jpg" alt="Teamfoto" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/ia31cffa0acfdf1a4/version/1604161826/image.jpg'"></figure>
-      </div>
-      <div class="dep">
-        <div><b>Management</b><span data-en="Coordinating the team">Koordinierung des Teams</span></div>
-        <div><b>Mechanical</b><span data-en="Designing and building the ROV">Konstruieren und Bauen des ROV</span></div>
-        <div><b>3D Engineering</b><span data-en="Designing and printing custom parts">Eigene Bauteile konstruieren und drucken</span></div>
-        <div><b>Software</b><span data-en="Programming the ROV">Programmierung des ROV</span></div>
-        <div><b>Documentation</b><span data-en="Documents that explain the ROV">Dokumente, die den ROV erklären</span></div>
-        <div><b>Website</b><span data-en="Running this site">Pflege dieser Website</span></div>
-        <div><b>Sponsoring</b><span data-en="Talking to sponsors">Kommunikation mit Sponsor*innen</span></div>
-      </div>
-    </section>
-
-    <!-- Presse -->
-    <section class="rv">
-      <span class="st mono" data-en="Press">Presse</span>
-      <h2 data-en="In the news">In den Medien</h2>
-      <ul class="press">
-        <li><a href="https://www.hna.de/lokales/wolfhagen/wolfhagen-ort54301/wolfhagen-schueler-nehmen-an-wettbewerb-in-usa-teil-13447789.html" target="_blank" rel="noopener"><span>HNA</span><span class="mono">17.01.2020</span></a></li>
-        <li><a href="https://www.hna.de/lokales/wolfhagen/wolfhagen-ort54301/schueler-wolfhager-wilhelm-filchner-schule-reisten-fuer-internationalen-wettbewerb-nach-seattle-10199096.html" target="_blank" rel="noopener"><span>HNA</span><span class="mono">01.09.2018</span></a></li>
-        <li><a href="https://www.hessenschau.de/tv-sendung/hessenschau---ganze-sendung,video-68164.html" target="_blank" rel="noopener"><span>hessenschau Sommertour</span><span class="mono">03.08.2018</span></a></li>
-        <li><a href="https://www.hessenschau.de/tv-sendung/hessenschau---ganze-sendung,video-63766.html" target="_blank" rel="noopener"><span>hessenschau</span><span class="mono">04.06.2018</span></a></li>
-        <li><a href="https://www.hna.de/lokales/wolfhagen/wolfhagen-ort54301/unterwasserrobotik-ag-filchner-schule-ist-bei-wm-in-seattle-dabei-9894717.html" target="_blank" rel="noopener"><span>HNA</span><span class="mono">24.05.2018</span></a></li>
-      </ul>
-    </section>
-
-    <!-- Sponsoren -->
-    <section id="sponsors" class="rv">
-      <span class="st mono">Station 05 · 170 m</span>
-      <h2 data-en="Our sponsors">Unsere Sponsoren</h2>
-      <div class="sp">
-        <a href="http://www.harms-boettger.de/" target="_blank" rel="noopener">Harms &amp; Böttger</a>
-        <a href="https://www.stadtwerke-wolfhagen.de/" target="_blank" rel="noopener">Stadtwerke Wolfhagen</a>
-        <a href="https://www.kasseler-sparkasse.de/" target="_blank" rel="noopener">Kasseler Sparkasse</a>
-      </div>
-      <p data-en="Without support there is no robot: thrusters, enclosures and travel cost real money. Want to help us dive deeper?">
-        Ohne Unterstützung kein Roboter: Thruster, Röhren und Reisen kosten Geld. Du möchtest uns helfen, tiefer zu tauchen?
-      </p>
-      <p style="margin-top:1.4rem">
-        <a class="btn" href="#contact" data-en="Become a sponsor">Sponsor werden</a>
-      </p>
-    </section>
-
-    <!-- Kontakt -->
-    <section id="contact" class="rv">
-      <span class="st mono">Station 06 · 200 m</span>
-      <h2 data-en="Get in touch">Meld dich bei uns</h2>
-      <p>Walter-Lübcke-Schule<br>Kurfürstenstraße 20<br>34466 Wolfhagen</p>
-      <p style="margin-top:1.4rem">
-        <a class="btn" href="mailto:DEINE-ADRESSE@BEISPIEL.DE">E-Mail</a>
-        <a class="btn" href="https://www.youtube.com/channel/UCu65_iAXrEefW-L_GRDL5ug" target="_blank" rel="noopener">YouTube</a>
-      </p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="mono">
-    <span>© G-Karere · Walter-Lübcke-Schule Wolfhagen</span>
-    <span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html" data-en="Privacy">Datenschutz</a></span>
-  </footer>
-
-</body>
-</html>
+<nav class="mono"><a class="lg" href="index.html#top">SEEWOLF</a><a href="index.html#about" data-en="About">Über uns</a><a href="index.html#rovs">ROVs</a><a href="wettbewerb.html" data-en="Competition">Wettbewerb</a><a href="index.html#sponsors">Sponsoring</a><a href="index.html#contact" data-en="Contact">Kontakt</a><a href="intern.html">Intern</a><button id="lang" aria-label="Language">EN</button></nav>
+<div id="gauge" aria-hidden="true"><b id="depth">0</b><span>M</span></div>
+<header class="hero" id="top"><i class="ring"></i><i class="ring"></i><i class="ring"></i><svg class="rov" viewBox="0 0 300 260" aria-label="ROV"><rect x="70" y="60" width="160" height="140" rx="18" fill="none" stroke="#06202e" stroke-width="6"/><rect x="105" y="78" width="90" height="104" rx="45" fill="#ff6a1f"/><rect x="118" y="92" width="64" height="76" rx="32" fill="#d9f1ee" opacity=".85"/><circle cx="150" cy="130" r="14" fill="#06202e"/><circle cx="150" cy="130" r="5" fill="#ff6a1f"/><g fill="#06202e"><circle cx="58" cy="52" r="34"/><circle cx="242" cy="52" r="34"/><circle cx="58" cy="208" r="34"/><circle cx="242" cy="208" r="34"/></g><g fill="none" stroke="#ff6a1f" stroke-width="4"><circle cx="58" cy="52" r="20"/><circle cx="242" cy="52" r="20"/><circle cx="58" cy="208" r="20"/><circle cx="242" cy="208" r="20"/></g><path d="M150 60V20M140 30l10-12 10 12" stroke="#06202e" stroke-width="5" fill="none"/></svg>
+<span class="mono">Team G-Karere · Walter-Lübcke-Schule · Wolfhagen</span><h1>See<br>wolf<i>.</i></h1>
+<p class="sub" data-en="We are a school team building our own underwater robot to compete at the MATE ROV Competition in the USA.">Wir sind eine Schul-AG und bauen unseren eigenen Unterwasserroboter, um damit beim MATE ROV Competition in den USA anzutreten.</p><svg class="wave" viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0 40Q150 0 300 40T600 40T900 40T1200 40V80H0Z" fill="#0a3d52"/></svg></header>
+<main><section id=about class="rv"><span class="st mono">Station 01 · 20 m</span><h2 data-en="Who we are">Wer wir sind</h2>
+<div class="two"><div><p data-en="We are the underwater robotics club G-Karere. Our goal: to independently design and build a working underwater robot (ROV) and take it to an international competition. We learn the technology and how to organise ourselves as a team.">Wir sind die Unterwasserrobotik-AG G-Karere. Unser Ziel: selbstständig einen funktionstüchtigen Unterwasserroboter (ROV) entwickeln und bauen und damit an einem internationalen Wettbewerb teilnehmen. Dabei lernen wir die Technik – und wie wir uns als Team selbst organisieren.</p>
+<p data-en="Like the competition demands, we run like a small company, with departments and roles.">Wie es der Wettbewerb verlangt, arbeiten wir wie ein kleines Unternehmen – mit Abteilungen und Ämtern.</p></div>
+<div class="stats"><div><b>4</b><span data-en="ROV generations">ROV-Generationen</span></div><div><b>2018</b><span data-en="World finals, Seattle area">Weltfinale bei Seattle</span></div><div><b>1×</b><span data-en="the only German team (2018)">einziges deutsches Team (2018)</span></div></div></div></section><section class="rv"><span class="st mono" data-en="Log">Logbuch</span><h2 data-en="Our history">Unsere Geschichte</h2><div class="tl"><div><span class="mono">2016</span><p data-en="Project founded at our school by Mr. Prinz.">Das Projekt wird von Herrn Prinz an unserer Schule ins Leben gerufen.</p></div><div><span class="mono">06 / 2017</span><p data-en="ROV Mark I is finished, but a leaking tube makes us miss the deadline.">ROV Mark I wird fertig – wegen einer undichten Röhre verpassen wir aber die Deadline.</p></div><div><span class="mono">2018</span><p data-en="With Mark II we qualify as the only German team for the international finals near Seattle. A leak damages the electronics there.">Mit Mark II qualifizieren wir uns als einziges deutsches Team für das Finale bei Seattle. Dort beschädigt ein Wassereinbruch die Elektronik.</p></div><div><span class="mono">2019</span><p data-en="Work on Mark III begins.">Die Arbeit an Mark III beginnt.</p></div><div><span class="mono">2020</span><p data-en="The competition is cancelled because of the pandemic and our work slows down.">Der Wettbewerb wird wegen Corona abgesagt, unsere Arbeit verzögert sich enorm.</p></div></div></section><section id=rovs class="rv"><span class="st mono">Station 02 · 60 m</span><h2 data-en="Our ROVs">Unsere ROVs</h2>
+<div class="cards"><a class="card hot" href="rov-mark-4.html"><span class="n">IV</span><span class="tag mono" data-en="In development">In Entwicklung</span><h3>Mark IV · Seewolf</h3><p data-en="Our new ROV series built on ESP32 and Arduino MEGA.">Unsere neue ROV-Reihe mit ESP32 und Arduino MEGA als Elektronik-Basis.</p><span class="go mono" data-en="View page →">Zur Seite →</span></a>
+<a class="card hot" href="seeboy.html"><span class="n">B</span><span class="tag mono" data-en="In development">In Entwicklung</span><h3>Seeboy</h3><p data-en="Our buoy, also ESP-based. A working name, the real one is to come.">Unsere Boje, ebenfalls auf ESP-Basis. Arbeitsname, ein richtiger Name folgt.</p><span class="go mono" data-en="View page →">Zur Seite →</span></a></div>
+<h3 style="margin-top:3rem" data-en="Earlier generations">Frühere Generationen</h3>
+<div class="cards"><a class="card" href="rov-mark-1.html"><span class="n">I</span><h3>Mark I</h3><p data-en="Our first robot (2017). It taught us the hardest lesson: watertight really means watertight.">Unser erster Roboter (2017). Er brachte uns die wichtigste Lektion bei: Dicht heißt wirklich dicht.</p><span class="go mono" data-en="View page →">Zur Seite →</span></a>
+<a class="card" href="rov-mark-2.html"><span class="n">II</span><h3>Mark II</h3><p data-en="Built from 2017. Took us to the 2018 finals in Tahoma, Washington.">Gebaut ab 2017. Brachte uns 2018 ins Finale nach Tahoma (Washington).</p><span class="go mono" data-en="View page →">Zur Seite →</span></a>
+<a class="card" href="rov-mark-3.html"><span class="n">III</span><h3>Mark III</h3><p data-en="From 2019: more professional hardware and software.">Ab 2019: professionellere Hardware und Software.</p><span class="go mono" data-en="View page →">Zur Seite →</span></a></div></section><section id=comp class="rv"><span class="st mono">Station 03 · 100 m</span><h2 data-en="The competition">Der Wettbewerb</h2>
+<div class="two"><div><p data-en="The MATE ROV Competition is an international contest by MATE II. Student teams from all over the world build an ROV and solve missions based on real-world problems, such as removing plastic waste from the sea.">Die MATE ROV Competition ist ein internationaler Wettbewerb der Organisation MATE II. Schüler-Teams aus aller Welt bauen einen ROV und lösen Aufgaben nach realen Problemen – etwa das Entfernen von Plastikmüll aus dem Meer.</p>
+<p data-en="We compete in the RANGER class. Since there is no regional round nearby, we qualify by sending in a video of our ROV solving tasks underwater. Teams also present in English to experts and hand in technical documents.">Wir starten in der Klasse RANGER. Weil es keine Vorrunde in der Nähe gibt, qualifizieren wir uns per Video, in dem unser ROV Aufgaben unter Wasser löst. Dazu kommen eine Präsentation auf Englisch vor Fachleuten und schriftliche Dokumente.</p>
+<p style="margin-top:1.6rem"><a class="btn" href="wettbewerb.html" data-en="Tasks 2027">Aufgaben 2027</a><a class="btn" href="https://www.materovcompetition.org/" target="_blank" rel="noopener">materovcompetition.org →</a></p></div>
+<figure class="pic"><img src="images/wettbewerb.jpg" alt="MATE ROV Competition" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/dimension=1920x1024:format=jpg/path/s03b168795390becb/image/iddf4a0cc4f48d196/version/1633785123/image.jpg'"></figure></div></section><section id=team class="rv"><span class="st mono">Station 04 · 130 m</span><h2 data-en="The crew">Die Crew</h2>
+<p data-en="Our team changes every school year and is run like a small company. Mentors: Mr. Eckhard and Mr. Müller.">Unser Team wechselt jedes Schuljahr und ist wie ein kleines Unternehmen aufgebaut. Mentoren: Hr. Eckhard und Hr. Müller.</p>
+<div class="who"><figure class="pic"><img src="images/eckhard.jpg" alt="Hr. Eckhard" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/dimension=200x10000:format=jpg/path/s03b168795390becb/image/icae2709d83f6600f/version/1583605324/image.jpg'"><figcaption class="mono" data-en="Mr. Eckhard">Hr. Eckhard</figcaption></figure><figure class="pic"><img src="images/mueller.jpg" alt="Hr. Müller" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/i426fca9f665eab81/version/1598301120/image.jpg'"><figcaption class="mono" data-en="Mr. Müller">Hr. Müller</figcaption></figure></div>
+<div class="pics"><figure class="pic"><img src="images/team-1.jpg" alt="Teamfoto" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/i86588883fc95627b/version/1604165728/image.jpg'"></figure><figure class="pic"><img src="images/team-2.jpg" alt="Teamfoto" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/ib8a6d61e08a3417a/version/1604161608/image.jpg'"></figure><figure class="pic"><img src="images/team-3.jpg" alt="Teamfoto" loading="lazy" onerror="this.onerror=function(){this.parentNode.style.display='none'};this.src='https://image.jimcdn.com/app/cms/image/transf/none/path/s03b168795390becb/image/ia31cffa0acfdf1a4/version/1604161826/image.jpg'"></figure></div>
+<div class="dep"><div><b>Management</b><span data-en="Coordinating the team">Koordinierung des Teams</span></div><div><b>Mechanical</b><span data-en="Designing and building the ROV">Konstruieren und Bauen des ROV</span></div><div><b>3D Engineering</b><span data-en="Designing and printing custom parts">Eigene Bauteile konstruieren und drucken</span></div><div><b>Software</b><span data-en="Programming the ROV">Programmierung des ROV</span></div><div><b>Documentation</b><span data-en="Documents that explain the ROV">Dokumente, die den ROV erklären</span></div><div><b>Website</b><span data-en="Running this site">Pflege dieser Website</span></div><div><b>Sponsoring</b><span data-en="Talking to sponsors">Kommunikation mit Sponsor*innen</span></div></div></section><section class="rv"><span class="st mono" data-en="Press">Presse</span><h2 data-en="In the news">In den Medien</h2><ul class="press"><li><a href="https://www.hna.de/lokales/wolfhagen/wolfhagen-ort54301/wolfhagen-schueler-nehmen-an-wettbewerb-in-usa-teil-13447789.html" target="_blank" rel="noopener"><span>HNA</span><span class="mono">17.01.2020</span></a></li><li><a href="https://www.hna.de/lokales/wolfhagen/wolfhagen-ort54301/schueler-wolfhager-wilhelm-filchner-schule-reisten-fuer-internationalen-wettbewerb-nach-seattle-10199096.html" target="_blank" rel="noopener"><span>HNA</span><span class="mono">01.09.2018</span></a></li><li><a href="https://www.hessenschau.de/tv-sendung/hessenschau---ganze-sendung,video-68164.html" target="_blank" rel="noopener"><span>hessenschau Sommertour</span><span class="mono">03.08.2018</span></a></li><li><a href="https://www.hessenschau.de/tv-sendung/hessenschau---ganze-sendung,video-63766.html" target="_blank" rel="noopener"><span>hessenschau</span><span class="mono">04.06.2018</span></a></li><li><a href="https://www.hna.de/lokales/wolfhagen/wolfhagen-ort54301/unterwasserrobotik-ag-filchner-schule-ist-bei-wm-in-seattle-dabei-9894717.html" target="_blank" rel="noopener"><span>HNA</span><span class="mono">24.05.2018</span></a></li></ul></section><section id=sponsors class="rv"><span class="st mono">Station 05 · 170 m</span><h2 data-en="Our sponsors">Unsere Sponsoren</h2>
+<div class="sp"><a href="http://www.harms-boettger.de/" target="_blank" rel="noopener">Harms &amp; Böttger</a><a href="https://www.stadtwerke-wolfhagen.de/" target="_blank" rel="noopener">Stadtwerke Wolfhagen</a><a href="https://www.kasseler-sparkasse.de/" target="_blank" rel="noopener">Kasseler Sparkasse</a></div>
+<p data-en="Without support there is no robot: thrusters, enclosures and travel cost real money. Want to help us dive deeper?">Ohne Unterstützung kein Roboter: Thruster, Röhren und Reisen kosten Geld. Du möchtest uns helfen, tiefer zu tauchen?</p>
+<p style="margin-top:1.4rem"><a class="btn" href="#contact" data-en="Become a sponsor">Sponsor werden</a></p></section><section id=contact class="rv"><span class="st mono">Station 06 · 200 m</span><h2 data-en="Get in touch">Meld dich bei uns</h2>
+<p>Walter-Lübcke-Schule<br>Kurfürstenstraße 20<br>34466 Wolfhagen</p><p style="margin-top:1.4rem"><a class="btn" href="mailto:DEINE-ADRESSE@BEISPIEL.DE">E-Mail</a><a class="btn" href="https://www.youtube.com/channel/UCu65_iAXrEefW-L_GRDL5ug" target="_blank" rel="noopener">YouTube</a></p></section></main>
+<footer class="mono"><span>© Seewolf · Team G-Karere · Walter-Lübcke-Schule Wolfhagen</span><span><a href="impressum.html">Impressum</a> · <a href="datenschutz.html" data-en="Privacy">Datenschutz</a></span></footer>
+<script src="app.js"></script></body></html>
